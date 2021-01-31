@@ -14,5 +14,8 @@
     "cypress-cucumber-preprocessor": "^4.0.0",
     "mochawesome": "^6.2.1",
     "prettier": "2.2.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
