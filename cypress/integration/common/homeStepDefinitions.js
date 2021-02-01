@@ -11,5 +11,10 @@ Given("I open the home page", ()=> {
 });
 
 Then("I validate Dom elements", function () {
-  taskhome.validateHomeObjectsPresents();
+  taskhome.TaskValidateHomeObjectsPresents();
 });
+
+
+Then("I get into Elements page", () => {
+  taskhome.TaksGetIntoPage()
+})

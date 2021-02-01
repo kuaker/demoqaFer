@@ -22,6 +22,15 @@ class HomeBody {
   getH5Tag = () => {
     return this.getCardsBodies().children("h5");
   };
+
+  getIntoCardSelected = (value) => {
+    this.getH5Tag().each(($e) => {
+      const txt = $e.text();
+      if (txt == value) {
+        cy.wrap($e).click();
+      }
+    });
+  };
 }
 
 export default HomeBody;

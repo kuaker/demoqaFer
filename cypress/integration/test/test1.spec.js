@@ -12,7 +12,7 @@ context("DEMO TOOLS QA", () => {
 
   describe("Home", function () {
     it("Validación de Objetos en pantalla", () => {
-      taskhome.validateHomeObjectsPresents();
+      taskhome.TaskValidateHomeObjectsPresents();
     });
 
     

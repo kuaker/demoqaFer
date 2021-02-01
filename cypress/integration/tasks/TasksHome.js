@@ -6,7 +6,7 @@ class TasksHome {
     this.homepage = new Home();
   }
 
-  validateHomeObjectsPresents = () => {
+  TaskValidateHomeObjectsPresents = () => {
     this.homepage.getDivHeader().should("be.visible");
     this.homepage.header
       .getLink()
@@ -39,6 +39,10 @@ class TasksHome {
       expect($e.text()).to.be.eql(cards.cardsFront[i]);
     });
   };
+
+  TaksGetIntoPage = () => {
+    this.homepage.body.getIntoCardSelected("Elements")
+  }
 }
 
 export default TasksHome;
