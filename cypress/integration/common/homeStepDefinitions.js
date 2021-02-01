@@ -6,7 +6,7 @@ import TasksHome from "../tasks/TasksHome";
 const url = Cypress.env("baseUrl");
 const taskhome = new TasksHome();
 
-Given("I open the home page", ()=> {
+Given("I open the home page", () => {
   cy.visit(url);
 });
 
@@ -14,7 +14,6 @@ Then("I validate Dom elements", function () {
   taskhome.TaskValidateHomeObjectsPresents();
 });
 
-
-Then("I get into Elements page", () => {
-  taskhome.TaksGetIntoPage()
-})
+Then("I get into pages", () => {
+  taskhome.TaksGetIntoPages();
+});

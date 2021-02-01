@@ -40,9 +40,21 @@ class TasksHome {
     });
   };
 
-  TaksGetIntoPage = () => {
-    this.homepage.body.getIntoCardSelected("Elements")
-  }
+  TaksGetIntoPages = () => {
+    this.homepage.body.getIntoCardSelected("Elements");
+    this.homepage.header.getLink().click();
+    this.homepage.body.getIntoCardSelected("Forms");
+    this.homepage.header.getLink().click();
+    this.homepage.body.getIntoCardSelected("Alerts, Frame & Windows");
+    this.homepage.header.getLink().click();
+    this.homepage.body.getIntoCardSelected("Widgets");
+    this.homepage.header.getLink().click();
+    this.homepage.body.getIntoCardSelected("Interactions");
+    this.homepage.header.getLink().click();
+    this.homepage.body.getIntoCardSelected(
+      "IntBook Store Applicationeractions"
+    );
+  };
 }
 
 export default TasksHome;
