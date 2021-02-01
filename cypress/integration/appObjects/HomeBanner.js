@@ -8,7 +8,7 @@ class HomeBanner {
   };
 
   getBannerLink = () => {
-    return this.getHomeBannerDiv().children("div").children("a");
+    return this.getHomeBannerDiv().children("a");
   };
 }
 
