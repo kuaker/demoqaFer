@@ -2,7 +2,7 @@
   "env": {
     "baseUrl": "https://demoqa.com/"
   },
-  "integrationFolder": "cypress/integration/",
+  "integrationFolder": "cypress/integration/BDD",
   "reporter": "mochawesome",
   "reporterOptions": {
     "reportDir": "cypress/results",

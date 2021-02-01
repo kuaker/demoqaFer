@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cy:run": "./node_modules/.bin/cypress run",
-    "cy:open": "./node_modules/.bin/cypress open"
+    "cy:open": "./node_modules/.bin/cypress open",
+    "headTest": "cypress run -- --headed"
   },
   "author": "Fernando J. Arroupé",
   "license": "ISC",
@@ -14,5 +15,8 @@
     "cypress-cucumber-preprocessor": "^4.0.0",
     "mochawesome": "^6.2.1",
     "prettier": "2.2.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
