@@ -6,7 +6,7 @@
   "scripts": {
     "cy:run": "./node_modules/.bin/cypress run",
     "cy:open": "./node_modules/.bin/cypress open",
-    "headTest":"cypress run -- --headed"
+    "headTest": "cypress run -- --headed"
   },
   "author": "Fernando J. Arroupé",
   "license": "ISC",
