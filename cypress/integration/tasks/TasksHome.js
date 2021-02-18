@@ -55,6 +55,10 @@ class TasksHome {
       "IntBook Store Applicationeractions"
     );
   };
+
+  TaskGetIntoPageSelected = (elem) => {
+    this.homepage.body.getIntoCardSelected(elem);
+  };
 }
 
 export default TasksHome;

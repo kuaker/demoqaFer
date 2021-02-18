@@ -24,10 +24,10 @@ class HomeBody {
   };
 
   getIntoCardSelected = (value) => {
-    this.getH5Tag().each(($e) => {
-      const txt = $e.text();
-      if (txt == value) {
-        cy.wrap($e).click();
+    return this.getH5Tag().each(($el, index) => {
+      const txt = $el.text();
+      if (value === txt) {
+        cy.wrap($el).click();
       }
     });
   };
