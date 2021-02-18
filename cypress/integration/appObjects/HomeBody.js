@@ -26,8 +26,13 @@ class HomeBody {
   getIntoCardSelected = (value) => {
     this.getH5Tag().each(($e) => {
       const txt = $e.text();
-      if (txt == value) {
+      cy.log("Valor del tag: " + value );
+        cy.log("Valor del texto: "+ txt );
+      if (value === txt) {
+        cy.log("encontró el objeto.")
         cy.wrap($e).click();
+      } else {
+        cy.log("No encontró el objeto.")
       }
     });
   };

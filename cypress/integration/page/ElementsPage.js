@@ -10,6 +10,10 @@ class ElementsPage {
   getDivMainHeaderElements = () => {
     return cy.get(".main-header");
   };
+
+  getDivLeftPannel = () => {
+    return cy.get(".left-pannel");
+  };
 }
 
 export default ElementsPage;
