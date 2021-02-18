@@ -5,5 +5,5 @@ Feature: Tools QA
   @focus
   Scenario: Validate all elements presents
     Given I open the home page
-    Then I get into pages
+    When I select the page
     Then I validate Dom elements in Elemens Page

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { Given, Then } from "cypress-cucumber-preprocessor/steps";
+import { Given, When,Then } from "cypress-cucumber-preprocessor/steps";
 import TasksElemenPage from "../tasks/TasksElemenPage";
 import TasksHome from "../tasks/TasksHome";
 
@@ -16,12 +16,12 @@ Then("I validate Dom elements", function () {
   taskhome.TaskValidateHomeObjectsPresents();
 });
 
-Then("I get into pages", () => {
+When("I get into pages", () => {
   taskhome.TaksGetIntoPages();
 });
 
 Then("I select the page", function () {
-  takshome.TaskGetIntoPageSelected("Elements")
+  taskhome.TaskGetIntoPageSelected("Elements")
 });
 
 Then("I validate Dom elements in Elemens Page", function () {
