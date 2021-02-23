@@ -10,6 +10,10 @@ class ElementsRows {
   getAccordionDiv = () => {
     return cy.get(".accordion");
   };
+
+  getElementsItem = () => {
+    return cy.get(".btn btn-light");
+  };
 }
 
 export default ElementsRows;
