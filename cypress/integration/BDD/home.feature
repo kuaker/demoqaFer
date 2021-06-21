@@ -1,8 +1,8 @@
+#languaje:es
 Feature: Tools QA
  
   I want to open the home
   
-  @focus
   Scenario: Validate all elements presents
     Given I open the home page
     Then I validate Dom elements
@@ -10,4 +10,6 @@ Feature: Tools QA
  @focus
   Scenario: Get in Elements
     Given I open the home page
-    Then I get into Elements page
+    When I get into Elements page 'Elements'
+    And I click into the element selected 'Elements'
+    Then Url should be the correct path

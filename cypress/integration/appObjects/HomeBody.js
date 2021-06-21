@@ -1,36 +1,24 @@
 class HomeBody {
-  getCatCardsDiv = () => {
-    return cy.get(".category-cards");
-  };
+	getCatCardsDiv = () => cy.get('.category-cards')
 
-  getCards = () => {
-    return cy.get(".card.mt-4.top-card");
-  };
+	getCards = () => cy.get('.card.mt-4.top-card')
 
-  getCardsAvatar = () => {
-    return cy.get(".avatar.mx-auto.white");
-  };
+	getCardsAvatar = () => cy.get('.avatar.mx-auto.white')
 
-  getCardsSvg = () => {
-    return this.getCardsAvatar().children("svg");
-  };
+	getCardsSvg = () => this.getCardsAvatar().children('svg')
 
-  getCardsBodies = () => {
-    return cy.get(".card-body");
-  };
+	getCardsBodies = () => cy.get('.card-body')
 
-  getH5Tag = () => {
-    return this.getCardsBodies().children("h5");
-  };
+	getH5Tag = () => this.getCardsBodies().children('h5')
 
-  getIntoCardSelected = (value) => {
-    this.getH5Tag().each(($e) => {
-      const txt = $e.text();
-      if (txt == value) {
-        cy.wrap($e).click();
-      }
-    });
-  };
+	getIntoCardSelected = value => {
+		this.getH5Tag().each(($e) => {
+			const txt = $e.text()
+			if (txt == value) {
+				cy.wrap($e).click()
+			}
+		})
+	}
 }
 
-export default HomeBody;
+export default HomeBody

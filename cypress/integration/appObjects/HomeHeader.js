@@ -1,11 +1,7 @@
 class HomeHeader {
-  getLink = () => {
-    return cy.get("a").eq(0);
-  };
+	getLink = () => cy.get('a').eq(0)
 
-  getImageToolsQA = () => {
-    return this.getLink().children("img");
-  };
+	getImageToolsQA = () => this.getLink().children('img')
 }
 
-export default HomeHeader;
+export default HomeHeader
